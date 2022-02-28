@@ -1,0 +1,75 @@
+#main-inner .archive-entries {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+
+#main-inner .archive-entries section {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 0;
+}
+
+#main-inner .archive-entries section .archive-entry-body {
+  display: none;
+}
+
+#main-inner .archive-entries section .entry-thumb-link {
+  width: 100%;
+  aspect-ratio: 16/9;
+  order: 0;
+}
+
+#main-inner .archive-entries section .entry-thumb-link .entry-thumb {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+#main-inner .archive-entries section .entry-thumb-link .entry-thumb:hover {
+  opacity: 0.8;
+}
+
+#main-inner .archive-entries section .archive-entry-header {
+  order: 1;
+}
+
+#main-inner .archive-entries section .archive-entry-header .archive-date {
+  margin: 5px 10px;
+  color: black;
+  font-size: 13px;
+}
+
+#main-inner .archive-entries section .archive-entry-header .entry-title {
+  margin: 0 10px;
+  color: black;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+#main-inner .archive-entries section .archive-entry-header .entry-title a {
+  color: black;
+  font-size: 1em;
+}
+
+#main-inner .archive-entries section .categories {
+  margin: 5px 10px;
+  order: 2;
+}
+
+#main-inner .archive-entries section .categories a {
+  padding: 5px;
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 0;
+  line-height: calc(20px - 5px);
+  margin: 0;
+}
+
+#main-inner .archive-entries section .categories a:not(:first-of-type) {
+  display: none;
+}
